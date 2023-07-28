@@ -1,18 +1,58 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div class="row row-cols-1 row-cols-md-4 p-4">
+      <ProductDescriptionDrawer 
+        :product="product"
+        v-on:close-product-drawer="closeNav()"
+      />
+      <ProductSummaryCard 
+        v-for="product in items"
+        :key="product.id"
+        :product="product"
+        v-on:view-product="viewProduct($event)"
+      />
+    </div>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import items from '../data/items.js'
+import ProductDescriptionDrawer from '../components/products/ProductDescriptionDrawer.vue'
+import ProductSummaryCard from '@/components/products/ProductSummaryCard.vue'
 
 export default {
   name: 'HomeView',
   components: {
-    HelloWorld
+    ProductSummaryCard,
+    ProductDescriptionDrawer
+  },
+  data() {
+    return {
+      items: items,
+      product: null
+    }
+  },
+  mounted() {
+    this.closeNav()
+  },
+  methods: {
+    viewProduct(product) {
+      this.openNav()
+      this.product = product
+    },
+    openNav() {
+      document.getElementById("mySidenav").style.width = "100%";
+    },
+    closeNav() {
+      this.product = null
+      document.getElementById("mySidenav").style.width = "0";
+    }
   }
 }
 </script>
+<style lang="scss">
+.sidenav {
+  padding-right: 0px;
+}
+</style>
