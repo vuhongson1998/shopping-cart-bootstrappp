@@ -48,7 +48,6 @@ export default {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: white;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;

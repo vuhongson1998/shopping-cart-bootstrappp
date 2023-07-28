@@ -44,10 +44,12 @@ export default {
     },
     openNav() {
       document.getElementById("mySidenav").style.width = "100%";
+      document.getElementById("mySidenav").style.backgroundColor = "#fff"
     },
     closeNav() {
       this.product = null
       document.getElementById("mySidenav").style.width = "0";
+      document.getElementById("mySidenav").style.backgroundColor = "unset"
     }
   }
 }
