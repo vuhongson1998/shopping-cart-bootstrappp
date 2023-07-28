@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <h1>Featured Products</h1>
+    <h1 class="pt-2">Featured Products</h1>
     <div class="row row-cols-1 row-cols-md-4 p-4">
       <ProductDescriptionDrawer 
         :product="product"

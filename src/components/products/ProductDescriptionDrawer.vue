@@ -11,7 +11,7 @@
             <h3 class="text-center">${{ product.price.toFixed(2) }}</h3>
         
             <div v-show="product_total">
-                <h3>Quantity In Cart: {{ product_total }}</h3>
+                <h5>Quantity In Cart: {{ product_total }}</h5>
             </div>
 
             <div class="button-container">
@@ -77,6 +77,7 @@ export default {
 }
   
 .product-details {
+    background-color: white;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -97,7 +98,7 @@ export default {
   
 @media (min-width: 1000px) {
     .product-details .card-img-top {
-        width: 70% !important;
+        width: 60% !important;
     }
 }
 

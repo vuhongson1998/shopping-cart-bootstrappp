@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1 class="pb-3">Your Cart</h1>
+        <h1 class="pt-2 pb-3">Your Cart</h1>
         <div class="cart-item-card" v-show="products.length">
             <table class="table">
                 <thead>

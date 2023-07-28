@@ -39,5 +39,9 @@
         p.text-muted {
             color: gray;
         }
+
+        &:hover {
+            box-shadow: 0 20px 40px 0 rgba(0,0,0,0.2);
+        }
     }
 </style>

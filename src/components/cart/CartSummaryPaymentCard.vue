@@ -5,7 +5,7 @@
         </tr>
         <tr>
             <th colspan="3" class="cart-total"></th>
-            <td class="text-center"><button class="view-product-button m-2 ">Pay by Credit Card</button></td>
+            <td class="text-center"><button class="view-product-button m-2">Checkout</button></td>
         </tr>
       
         

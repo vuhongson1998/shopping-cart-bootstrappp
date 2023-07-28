@@ -1,7 +1,9 @@
 <template>
-  <nav id="nav">
-    <router-link :class="{active: $route.name === 'Home'}" to="/">Home</router-link> |
-    <router-link :class="{active: $route.name === 'Cart'}" to="/cart">Cart</router-link>
+  <nav id="nav" class="d-flex justify-content-center">
+    <div class="menu-tab">
+      <router-link id="nav_item_1" :class="{active: $route.name === 'Home'}" to="/">Home</router-link> ||
+      <router-link id="nav_item_2" :class="{active: $route.name === 'Cart'}" to="/cart">Cart</router-link>
+    </div>
   </nav>
   <router-view/>
 </template>
@@ -55,4 +57,30 @@ body {
 .text-center {
   text-align: center;
 }
+
+.menu-tab {
+  margin: 0px !important;
+  padding: 0px;
+  width: 150px !important;
+  display: flex;
+
+  a {
+    float: left;
+    width: 50%;
+    cursor: pointer;
+
+    &#nav_item_1 {
+      text-align: end;
+    }
+
+    &#nav_item_2 {
+      text-align: start;
+    }
+
+    &.router-link-active {
+      border-bottom: 0.2rem solid #cc00ff;
+    }
+  }
+}
+
 </style>
