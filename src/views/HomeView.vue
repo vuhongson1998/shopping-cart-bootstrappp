@@ -43,13 +43,13 @@ export default {
       this.product = product
     },
     openNav() {
-      document.getElementById("mySidenav").style.width = "100%";
       document.getElementById("mySidenav").style.backgroundColor = "#fff"
+      document.getElementById("mySidenav").style.width = "100%";
     },
     closeNav() {
       this.product = null
-      document.getElementById("mySidenav").style.width = "0";
       document.getElementById("mySidenav").style.backgroundColor = "unset"
+      document.getElementById("mySidenav").style.width = "0";
     }
   }
 }
