@@ -24,6 +24,10 @@
 </script>
 <style lang="scss">
     .card {
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.5s;
+        border-radius: 5px;
+
         h5.price {
             color: gray;
         }
@@ -34,6 +38,14 @@
 
         p.text-muted {
             color: gray;
+        }
+
+        &:hover {
+            box-shadow: 0 20px 40px 0 rgba(0,0,0,0.2);
+            button.view-product-button {
+                background-color: rgb(111, 79, 187);
+                color: white;
+            }
         }
     }
 
@@ -46,20 +58,6 @@
         font-size: 1.15rem;
         border-radius: 5px;
         cursor: pointer;
-    }
-
-    .card {
-        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-        transition: 0.5s;
-        border-radius: 5px;
-    }
-      
-    .card:hover {
-        box-shadow: 0 20px 40px 0 rgba(0,0,0,0.2);
-        button.view-product-button {
-            background-color: rgb(79, 160, 187);
-            color: white;
-        }
     }
       
     @media (min-width: 576px) { 

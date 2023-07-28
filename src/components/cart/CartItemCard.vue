@@ -1,18 +1,15 @@
 <template>
-    <div class="cart-item-card">
-        <div class="header">
-            <h3>{{ product.name }}</h3>
-            <h4>In Cart: {{ product.quantity }}</h4>
-            <h4>Total Cost: ${{ item_cost.toFixed(2) }}</h4>
-        </div>
-
-        <p>{{ description }}</p>
-    </div>
+    <tr>
+        <th scope="row" class="text-center">{{ index + 1 }}</th>
+        <td class="text-center">{{ product.name }}</td>
+        <td class="text-center">{{ product.quantity }}</td>
+        <td class="text-center">${{ item_cost.toFixed(2) }}</td>
+    </tr>
 </template>
 
 <script>
 export default {
-    props: ['product'],
+    props: ['product', 'index'],
     computed: {
         description() {
             return this.product.description.substring(0, 120)
@@ -30,7 +27,6 @@ export default {
     background-color: white;
     box-shadow: 0 0 5px gray;
     border-radius: 5px;
-    padding: 10px;
     text-align: left;
 
     .header {

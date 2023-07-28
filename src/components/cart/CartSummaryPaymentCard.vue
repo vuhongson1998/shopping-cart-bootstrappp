@@ -1,9 +1,14 @@
 <template>
-    <div class="cart-item-card">
-        <h3>Cart Total: ${{ cart_total.toFixed(2) }}</h3>
+        <tr>
+            <th colspan="3" class="cart-total">Cart Total</th>
+            <td class="text-center">${{ cart_total.toFixed(2) }}</td>
+        </tr>
+        <tr>
+            <th colspan="3" class="cart-total"></th>
+            <td class="text-center"><button class="view-product-button m-2 ">Pay by Credit Card</button></td>
+        </tr>
+      
         
-        <button class="view-product-button">Pay by Credit Card</button>
-    </div>
 </template>
 <script>
     export default {
@@ -14,3 +19,20 @@
         }
     }
 </script>
+<style lang="scss">
+
+button.view-product-button {
+    box-shadow: 0 20px 40px 0 rgba(0,0,0,0.2);
+    &:hover {
+        background-color: rgb(111, 79, 187);
+        color: white;
+    }
+    
+}
+
+@media (min-width: 1200px) {
+    .cart-total {
+        padding-left: 40px !important;
+    }
+}
+</style>

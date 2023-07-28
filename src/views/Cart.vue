@@ -1,13 +1,29 @@
 <template>
     <div>
         <h1>Your Cart</h1>
-        <CartItemCard 
-            v-for="product in products" 
-            :key="product.id"
-            :product="product"
-        />
+        <div class="cart-item-card">
+            <table class="table">
+                <thead>
+                <tr>
+                    <th scope="col" class="text-center">No</th>
+                    <th scope="col" class="text-center">Product Name</th>
+                    <th scope="col" class="text-center">Quantity</th>
+                    <th scope="col" class="text-center">Total Cost</th>
+                </tr>
+                </thead>
+                <tbody>
+                    <CartItemCard 
+                    v-for="(product, index) in products" 
+                    :key="product.id"
+                    :index="index"
+                    :product="product"
+                    />
 
-        <CartSummaryPaymentCard />
+                    <CartSummaryPaymentCard />
+                </tbody>
+            </table>
+        </div>
+
     </div>
 </template>
 <script>
