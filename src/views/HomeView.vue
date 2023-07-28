@@ -1,5 +1,6 @@
 <template>
   <div class="home">
+    <h1>Featured Products</h1>
     <div class="row row-cols-1 row-cols-md-4 p-4">
       <ProductDescriptionDrawer 
         :product="product"
@@ -52,7 +53,13 @@ export default {
 }
 </script>
 <style lang="scss">
-.sidenav {
-  padding-right: 0px;
+@media (min-width: 576px) { 
+  .home {
+      position: absolute;
+      width: 80%;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+  }
 }
 </style>

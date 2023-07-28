@@ -40,7 +40,7 @@ export default {
     }
 }
 </script>
-<style lang="scss">
+<style lang="scss" scoped>
 .sidenav {
     height: 100%;
     width: 0;
@@ -52,7 +52,6 @@ export default {
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
-    padding-right: 0px;
     text-align:center;
 
     a {
@@ -92,20 +91,7 @@ export default {
         button {
             font-size: 15px;
             width: 80px;
-            border: none;
-            padding: 10px;
-            border-radius: 5px;
             margin: 0 5px 50px 5px;
-            cursor: pointer;
-
-            .view-product-button {
-                box-shadow: 0 20px 40px 0 rgba(0,0,0,0.2);
-                &:hover {
-                    background-color: rgb(111, 79, 187);
-                    color: white;
-                }
-                
-            }
         }
     }
 }

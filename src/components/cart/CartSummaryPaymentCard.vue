@@ -19,17 +19,7 @@
         }
     }
 </script>
-<style lang="scss">
-
-button.view-product-button {
-    box-shadow: 0 20px 40px 0 rgba(0,0,0,0.2);
-    &:hover {
-        background-color: rgb(111, 79, 187);
-        color: white;
-    }
-    
-}
-
+<style lang="scss" scoped>
 @media (min-width: 1200px) {
     .cart-total {
         padding-left: 40px !important;

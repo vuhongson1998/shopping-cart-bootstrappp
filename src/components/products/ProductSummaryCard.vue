@@ -22,7 +22,7 @@
         }
     }
 </script>
-<style lang="scss">
+<style lang="scss" scoped>
     .card {
         box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
         transition: 0.5s;
@@ -38,35 +38,6 @@
 
         p.text-muted {
             color: gray;
-        }
-
-        &:hover {
-            box-shadow: 0 20px 40px 0 rgba(0,0,0,0.2);
-            button.view-product-button {
-                background-color: rgb(111, 79, 187);
-                color: white;
-            }
-        }
-    }
-
-    button.view-product-button {
-        padding: 10px;
-        background-color: rgb(79, 160, 187);
-        border: none;
-        color: white;
-        font-weight: bold;
-        font-size: 1.15rem;
-        border-radius: 5px;
-        cursor: pointer;
-    }
-      
-    @media (min-width: 576px) { 
-        .home {
-            position: absolute;
-            width: 80%;
-            left: 0;
-            right: 0;
-            margin: 0 auto;
         }
     }
 </style>

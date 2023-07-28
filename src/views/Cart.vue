@@ -1,7 +1,7 @@
 <template>
     <div>
-        <h1>Your Cart</h1>
-        <div class="cart-item-card">
+        <h1 class="pb-3">Your Cart</h1>
+        <div class="cart-item-card" v-show="products.length">
             <table class="table">
                 <thead>
                 <tr>
@@ -23,7 +23,7 @@
                 </tbody>
             </table>
         </div>
-
+        <h3 v-show="!products.length">No products in the cart!</h3>
     </div>
 </template>
 <script>
@@ -42,3 +42,18 @@ export default {
     }
 }
 </script>
+<style lang="scss" scoped>
+.cart-item-card {
+    width: 90%;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 0 0 5px gray;
+    border-radius: 5px;
+    text-align: left;
+
+    .header {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+</style>
