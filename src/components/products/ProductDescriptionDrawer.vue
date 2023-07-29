@@ -46,7 +46,7 @@ export default {
     width: 0;
     position: fixed;
     z-index: 1;
-    top: 0;
+    top: 45px;
     left: 0;
     overflow-x: hidden;
     transition: 0.5s;

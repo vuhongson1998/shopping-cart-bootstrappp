@@ -55,6 +55,9 @@ export default {
 }
 </script>
 <style lang="scss">
+.home {
+  padding-top: 60px;
+}
 @media (min-width: 576px) { 
   .home {
       position: absolute;

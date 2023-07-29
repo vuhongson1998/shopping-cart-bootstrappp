@@ -40,16 +40,19 @@ body {
   height: 53px;
   background-color: white;
   line-height: 30px;
+  background-color: yellowgreen;
+  position: fixed;
+  z-index: 10000;
 
   a {
     font-weight: bold;
-    color: darkgray;
+    color: #2c3e50;
     text-decoration: none;
     margin: 0 5px 0 5px;
     font-size: 1.25rem;
     
     &.router-link-active {
-      color: #2c3e50;
+      color: teal;
     }
   }
 }
