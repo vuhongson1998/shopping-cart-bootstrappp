@@ -16,3 +16,7 @@ button.view-product-button {
         color: white;
     }
 }
+
+table, button {
+    touch-action: manipulation;
+}
