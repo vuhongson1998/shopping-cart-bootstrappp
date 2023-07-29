@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <h1 class="pt-2">Featured Products</h1>
-    <div class="row row-cols-1 row-cols-md-4 p-4">
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 p-4">
       <ProductDescriptionDrawer 
         :product="product"
         v-on:close-product-drawer="closeNav()"
