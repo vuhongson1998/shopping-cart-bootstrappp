@@ -45,11 +45,13 @@ export default {
     openNav() {
       document.getElementById("mySidenav").style.backgroundColor = "#fff"
       document.getElementById("mySidenav").style.width = "100%";
+      document.getElementsByTagName("html")[0].style.overflowY = "hidden";
     },
     closeNav() {
       this.product = null
       document.getElementById("mySidenav").style.backgroundColor = "unset"
       document.getElementById("mySidenav").style.width = "0";
+      document.getElementsByTagName("html")[0].style.overflowY = "visible";
     }
   }
 }
